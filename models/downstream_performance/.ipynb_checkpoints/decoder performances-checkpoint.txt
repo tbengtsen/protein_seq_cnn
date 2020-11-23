@@ -1,0 +1,27 @@
+
+# nn_model                    |  ks |decoder | RF protein G|  RF 1d5r |RF 2H11 ||
+
+cnn_autoencode_AA.py  | 5 | protg:rmsd=1.34,P=0.34|rmsd=0.23,P=0.65|rmsd=0.30,P=0.51
+cnn_autoencode_AA_ls100_1fc.py | 5 
+
+cnn_avgpool_ls400_0fc_seq4.py | 3/3 |     |protg:rmsd=1.24,P=0.54|rmsd=0.26,P=0.49|rmsd=0.31,P=0.45
+cnn_avgpool_ls400_0fc_seq4.py | 5/3 |     |protg:rmsd=1.31 ,P=0.51|rmsd=0.25,0.51|rmsd=0.31,P=0.48 
+cnn_avgpool_ls400_0fc_seq4.py | 5/5 |     |protg:rmsd=1.26,P=0.56|rmsd=0.25,P=0.52|rmsd=0.31,P=0.38
+
+
+cnn_avgpool_ls500_1fc_seq63.py| 2/2 |    |protg:rmsd=1.04,P=0.56|rmsd=0.25, P=0.54|rmsd=0.33,p=0.43
+cnn_avgpool_ls500_1fc_seq63.py| 5/5 |    |protg:rmsd=1.15,P=0.70|rmsd=0.25, P=0.55|rmsd=0.32,P=0.43
+cnn_avgpool_ls500_1fc_seq63.py| 7/3 
+cnn_avgpool_ls500_1fc_seq63.py| 7/7|46.46|protg:rmsd=0.95,P=0.77|rmsd=0.25,P0.54|rmsd=0.32,p=0.39
+cnn_avgpool_ls500_1fc_seq63.py| 9/3|69.43|protg:rmsd=1.02,P=0.70|rmsd=0.25,P=0.52|rmsd=0.31,P=0.48
+
+cnn_strided_ls500_0fc_seq4.py  | 3 |  mis |protg:rmsd=1.28,P=0.56|rmsd=0.25,P=0.58|rmsd=0.32,P=0.41
+cnn_strided_ls500_0fc_seq4.py  |
+cnn_strided_ls504_0fc_seq63.py | 
+cnn_strided_ls500_1fc_seq63.py | 3  | mis  |done
+cnn_strided_ls500_1fc_seq63.py | 5  | mis 
+cnn_strided_ls500_1fc_seq63.py | 7  | mis 
+cnn_strided_ls500_1fc_seq63.py | 9  | mis 
+cnn_strided_ls500_1fc_seq63.py | 11 | 71.1007
+cnn_strided_ls500_2fc_seq63.py
+

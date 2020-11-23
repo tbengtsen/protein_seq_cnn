@@ -4,7 +4,7 @@
 This project concerns representation learning using convolutional neural networks (CNN) on protein sequences (Uniref50).
 
 
-It investigates performances of downstream tasks from both TAPE (i.e. stability or fluorescence) and and more random forrest trees on stability ddGs from protein G (Mayo) or DMS (Fowler) on pdb: 2H11 or pdb:1D5R
+It investigates performances of downstream tasks from both TAPE (i.e. stability or fluorescence) and random forrest models  on stability ddGs from protein G (Mayo) or DMS (Fowler) on pdb: 2H11 or pdb:1D5R
 
 This project was small fun project to initially learn machine learning.
 
@@ -53,4 +53,17 @@ If you run the streamlit app on a remote server, then use the same approach as f
 ssh -N -L 8501:localhost:8501 <remote_server_name>
 ```
 and then open the tunneled port in your browser again using `http://localhost:8501`
+
+
+# Citations:
+```
+Evaluating Protein Transfer Learning with TAPE. R.Rao et al. Neurips. 2019
+https://papers.nips.cc/paper/2019/file/37f65c068b7723cd7809ee2d31d7861c-Paper.pdf
+```
+```
+Protein stability engineering insights revealed by domain-wide comprehensive mutagenesis. A. Nisthal et al. S. Mayo . PNAS 2019.
+```
+```
+Multiplex Assessment of Protein Variant Abundance by Massively Parallel Sequencing. K.Matreyek et al .. D. Fowler. Nat. Genet. 2018.
+```
 

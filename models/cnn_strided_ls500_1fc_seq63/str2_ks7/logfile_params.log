@@ -1,0 +1,156 @@
+# Parameters for autoencoder 
+# Training started on: 2019-11-09
+
+Training data file: /home/trz846/representation_learning/data/uniref50_preprocessed.h5
+
+
+TRAINING AND MODEL PARAMS:
+======================
+data :		 /home/trz846/representation_learning/data/uniref50_preprocessed.h5
+kernel_size :		 7
+stride :		 2
+padding :		 3
+batch_size :		 100
+valid_size :		 100
+learning_rate :		 0.0003
+num_epochs :		 8
+testing :		 False
+debug :		 False
+
+
+Model Summary:
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv1d-1             [100, 50, 500]           8,800
+              ReLU-2             [100, 50, 500]               0
+       BatchNorm1d-3             [100, 50, 500]             100
+            Conv1d-4             [100, 50, 250]          17,550
+              ReLU-5             [100, 50, 250]               0
+       BatchNorm1d-6             [100, 50, 250]             100
+            Conv1d-7            [100, 100, 250]          35,100
+              ReLU-8            [100, 100, 250]               0
+       BatchNorm1d-9            [100, 100, 250]             200
+           Conv1d-10            [100, 100, 125]          70,100
+             ReLU-11            [100, 100, 125]               0
+      BatchNorm1d-12            [100, 100, 125]             200
+           Conv1d-13             [100, 100, 63]          70,100
+             ReLU-14             [100, 100, 63]               0
+      BatchNorm1d-15             [100, 100, 63]             200
+           Linear-16                 [100, 500]       3,150,500
+             ReLU-17                 [100, 500]               0
+      BatchNorm1d-18                 [100, 500]           1,000
+           Linear-19                [100, 6300]       3,156,300
+             ReLU-20                [100, 6300]               0
+      BatchNorm1d-21                [100, 6300]          12,600
+         Upsample-22            [100, 100, 125]               0
+           Conv1d-23            [100, 100, 125]          70,100
+             ReLU-24            [100, 100, 125]               0
+      BatchNorm1d-25            [100, 100, 125]             200
+         Upsample-26            [100, 100, 250]               0
+           Conv1d-27            [100, 100, 250]          70,100
+             ReLU-28            [100, 100, 250]               0
+      BatchNorm1d-29            [100, 100, 250]             200
+           Conv1d-30             [100, 50, 250]          35,050
+             ReLU-31             [100, 50, 250]               0
+      BatchNorm1d-32             [100, 50, 250]             100
+         Upsample-33             [100, 50, 500]               0
+           Conv1d-34             [100, 50, 500]          17,550
+             ReLU-35             [100, 50, 500]               0
+      BatchNorm1d-36             [100, 50, 500]             100
+           Conv1d-37             [100, 25, 500]           8,775
+================================================================
+Total params: 6,725,025
+Trainable params: 6,725,025
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 4.77
+Forward/backward pass size (MB): 430.53
+Params size (MB): 25.65
+Estimated Total Size (MB): 460.95
+----------------------------------------------------------------
+
+Training model saved after training on 2806100 sequences.
+
+Training set loss: 0.5623611211776733, accuracy: 0.5055707584050039
+Training model saved after training on 11224700 sequences.
+
+Training set loss: 0.38199764490127563, accuracy: 0.6235752145973076
+Training model saved after training on 15434000 sequences.
+
+Training set loss: 0.3599837124347687, accuracy: 0.675811743409888
+Training model saved after training on 16837100 sequences.
+
+Training set loss: 0.3703072667121887, accuracy: 0.6620232004457728
+Training model saved after training on 30868100 sequences.
+
+Training set loss: 0.36502620577812195, accuracy: 0.6887215636014098
+Training model saved after training on 39286700 sequences.
+
+Training set loss: 0.34555625915527344, accuracy: 0.6933143958608096
+Training model saved after training on 43496000 sequences.
+
+Training set loss: 0.3352643847465515, accuracy: 0.7053599579611141
+Training model saved after training on 44899100 sequences.
+
+Training set loss: 0.3055909276008606, accuracy: 0.7192655667908462
+Training model saved after training on 58930100 sequences.
+
+Training set loss: 0.280982106924057, accuracy: 0.7118174826967444
+Training model saved after training on 67348700 sequences.
+
+Training set loss: 0.32977449893951416, accuracy: 0.686620038150604
+Training model saved after training on 71558000 sequences.
+
+Training set loss: 0.31545278429985046, accuracy: 0.7089552238805971
+Training model saved after training on 72961100 sequences.
+
+Training set loss: 0.3042736053466797, accuracy: 0.7079246382441488
+Training model saved after training on 86992100 sequences.
+
+Training set loss: 0.3337496817111969, accuracy: 0.7199380606578385
+Training model saved after training on 95410700 sequences.
+
+Training set loss: 0.30929145216941833, accuracy: 0.7316101178945038
+Training model saved after training on 99620000 sequences.
+
+Training set loss: 0.2981080412864685, accuracy: 0.7192927878882148
+Training model saved after training on 101023100 sequences.
+
+Training set loss: 0.31133270263671875, accuracy: 0.7306991804108064
+Training model saved after training on 115054100 sequences.
+
+Training set loss: 0.3920130729675293, accuracy: 0.7361804907503979
+Training model saved after training on 123472700 sequences.
+
+Training set loss: 0.30265361070632935, accuracy: 0.7384112619406737
+Training model saved after training on 127682000 sequences.
+
+Training set loss: 0.2727331221103668, accuracy: 0.7411741174117412
+Training model saved after training on 129085100 sequences.
+
+Training set loss: 0.34223371744155884, accuracy: 0.7200614378437299
+Training model saved after training on 143116100 sequences.
+
+Training set loss: 0.30017268657684326, accuracy: 0.7514036182158453
+Training model saved after training on 151534700 sequences.
+
+Training set loss: 0.30465441942214966, accuracy: 0.7472662292633488
+Training model saved after training on 155744000 sequences.
+
+Training set loss: 0.3262638747692108, accuracy: 0.7411903637222484
+Training model saved after training on 157147100 sequences.
+
+Training set loss: 0.28519105911254883, accuracy: 0.7498782138024357
+Training model saved after training on 171178100 sequences.
+
+Training set loss: 0.3309391736984253, accuracy: 0.710663649378839
+Training model saved after training on 179596700 sequences.
+
+Training set loss: 0.23034285008907318, accuracy: 0.7297819623389494
+Training model saved after training on 183806000 sequences.
+
+Training set loss: 0.34239253401756287, accuracy: 0.7317464172941462
+Training model saved after training on 185209100 sequences.
+
+Training set loss: 0.25119292736053467, accuracy: 0.734599117322545

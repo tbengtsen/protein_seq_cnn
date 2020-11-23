@@ -1,0 +1,23 @@
+
+Performance:
+Test MSE :	 1.1662605091603133
+Test MAE :	 0.9865519704609892
+Test S_Corr :	 0.24497509748820312
+
+
+INPUT PARAMS:
+======================
+nn_model :		 cnn_strided_ls500_1fc_seq63.py
+model_weights :		 /home/trz846/representation_learning/models/cnn_strided_ls500_1fc_seq63/str2_ks7/checkpoint_model_epoch0_train_ds15.pt
+kernel_size :		 7
+stride :		 2
+padding :		 3
+ks_pool :		 None
+str_pool :		 None
+pad_pool :		 None
+lr :		 0.0001
+epochs :		 300
+batch_size :		 1000
+task :		 fluorescence
+out_dir :		 None
+debug :		 False

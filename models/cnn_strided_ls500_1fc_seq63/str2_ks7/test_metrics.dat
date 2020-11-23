@@ -1,0 +1,4 @@
+# CNN to encode/compress amino acids. 
+# Created on: Sun Feb 16 00:00:00 2020
+# epoch  nr_used_batches  loss  accuracy padding_accuracy 
+0	 -1	 0.3516	 69.2197 	 99.9869 

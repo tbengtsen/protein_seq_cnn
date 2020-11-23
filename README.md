@@ -39,8 +39,8 @@ The streamlit app allows you too:
 
 examples: 
 <p align="center">
-  <img src="./treamlit_example1.png width="350" title="model comparisons">
-  <img src="streamlit_example2.png" width="350" alt="single model investigations">
+  <img src="streamlit_example1.png" width="500" title="model comparisons">
+  <img src="streamlit_example2.png" width="500" title="single model investigations">
 </p>
 
 

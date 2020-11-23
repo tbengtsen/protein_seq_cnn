@@ -37,6 +37,15 @@ The streamlit app allows you too:
         - show upstream/downstream log_files with all model parameters
 
 
+examples: 
+<p align="center">
+  <img src="./treamlit_example1.png width="350" title="model comparisons">
+  <img src="streamlit_example2.png" width="350" alt="single model investigations">
+</p>
+
+
+
+
 To run streamlit app:
 Just ensure you have streamlit installed in your conda environment see: `environment_streamlit.yml`
 and then run:

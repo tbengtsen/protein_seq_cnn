@@ -7,10 +7,9 @@
     
     - preprocess_w_taxon.py:
         Script for preprocessing uniref50 data using only sequences in specified taxon family
-        See dir: representation_learning/data/uniref/uniref_by_taxonomi for more info  
+        See dir: representation_learning/data/uniref/uniref_by_taxonomi for more info 
+        OBS! ONLY WORKS IN PYTHON2.7 due to module library for getting evolution
     
-    - clean_fasta_2_text.py: 
-        Script to strip multi-fasta text into sequences without headers and with each seq on a single line. Similar to preprocess_data.py except prints to text file and does not randomly mix sequences. 
 
 ### CNN train scripts 
     - cnn_seq_train.py: 
@@ -21,9 +20,7 @@
 ### Dwonstream training on TAPE tasks
     - tape_evaluate.py: 
        Script to launch downstream training and evaluation of tape tasks using representations from upstream pre-trained CNN models. 
-       Takes many inputs among others which nn_model to use, see --help for info. 
-    
-    
+       Takes many inputs among others which nn_model to use, see --help for info 
     
     - submit_tape.sh
         Slurm submit script to launch tape_evaluate.py for downstream evaluation of pre-trained CNN representation models. Takes parser arguments.

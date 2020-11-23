@@ -1,0 +1,25 @@
+# renaming of nn models from old used
+
+
+# average pooling
+-----------------
+
+cnn_avgpool_ls500_0fc_seq4
+ConvAvgPool_w_FC --> cnn_avgpool_ls500_1fc_seq63
+ConvAvgPool_no_FC_seq8 --> cnn_avgpool_ls400_0fc_seq8
+ConvAvgPool_no_FC_seq4 --> cnn_avgpool_ls400_0fc_seq4
+
+# strided convolution
+-----------------
+ConvStride_W_FC -> cnn_strided_ls500_1fc_seq63
+ConvStride_W_2_FC -> cnn_strided_ls500_2fc_seq63
+ConvStride_no_FC_seq8  -> cnn_strided_ls400_0fc_seq8
+ConvStride_no_FC_seq4  -> cnn_strided_ls500_0fc_seq4
+ConvStride_no_FC_seq32 -> cnn_strided_ls512_0fc_seq32
+ConvStride_no_FC_seq63  -> cnn_strided_ls504_0fc_seq63
+ConvStride_no_FC_seq63_ks_variable -> cnn_strided_ls504_0fc_seq63_ksvariable
+
+# compressing of channels only
+------------------------------
+Conv_Autoencode_AA --> cnn_autoencode_AA
+

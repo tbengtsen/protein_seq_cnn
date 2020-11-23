@@ -17,36 +17,37 @@ All results of this project are visualised in a streamlit app.
 It visualises the results of all tested models, both decoder performance and downstream performances on TAPE tasks as well as individual proteins.
 
 The streamlit app allows you too:
-    - compare all models decoder performance
-        - and distinguish between # layers, # fully connected etc
-    - compare all models downstream performances on
-        - TAPE Fluorescence task
-        - TAPE Stability task
-        - Single protein DMS mutations on pdb: 2H11 (Fowler)
-        - Single protein DMS mutations on pdb: 1D5R (Fowler)
-        - Single protein ddG mutations on protein G (Mayo)
-    - investigate all individual trained models f.x. showing:
-        - downstream prediction vs target on all above mentioned tasks
-        - downstream prediction vs target histogram
-        - downstream training plots
-        - upstream training performance plot
-        - upstream confusion matrix
-        - upstream performance on N-,C- terminal ends
-        - upstream prediction performance on each type of AA
-        - show model architecture
-        - show upstream/downstream log_files with all model parameters
+
+- compare all models decoder performance
+    - and distinguish between # layers, # fully connected etc
+- compare all models downstream performances on
+    - TAPE Fluorescence task
+    - TAPE Stability task
+    - Single protein DMS mutations on pdb: 2H11 (Fowler)
+    - Single protein DMS mutations on pdb: 1D5R (Fowler)
+    - Single protein ddG mutations on protein G (Mayo)
+- investigate all individual trained models f.x. showing:
+    - downstream prediction vs target on all above mentioned tasks
+    - downstream prediction vs target histogram
+    - downstream training plots
+    - upstream training performance plot
+    - upstream confusion matrix
+    - upstream performance on N-,C- terminal ends
+    - upstream prediction performance on each type of AA
+    - show model architecture
+    - show upstream/downstream log_files with all model parameters
 
 
-examples: 
+## Results streamlit examples: 
 <p align="center">
   <img src="streamlit_example1.png" width="500" title="model comparisons">
+</p>
+
+<p align="center">
   <img src="streamlit_example2.png" width="500" title="single model investigations">
 </p>
 
-
-
-
-To run streamlit app:
+## Run streamlit:
 Just ensure you have streamlit installed in your conda environment see: `environment_streamlit.yml`
 and then run:
 
